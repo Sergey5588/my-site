@@ -78,6 +78,7 @@
 
 {#each pinned as i}
 	<h1>{i.name}</h1>
+	<button>{i.language}</button>
 {/each}
 
 
