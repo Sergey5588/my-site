@@ -27,5 +27,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"animejs": "^4.0.1"
 	}
 }
