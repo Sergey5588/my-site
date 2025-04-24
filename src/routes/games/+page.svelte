@@ -8,5 +8,5 @@
 </script>
 
 <div class='grag' style="height: fit-content; width:fit-content;">
-    <button> drag me</button>
+    <button style="cursor:grab"> drag me</button>
 </div>

@@ -1,6 +1,7 @@
 
 * {
     font-family: "Inter", sans-serif !important;
+    
 }
 
 :root {
@@ -75,6 +76,6 @@ button:active {
 
     list-style: none;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
 }
 
