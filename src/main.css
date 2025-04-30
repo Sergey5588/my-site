@@ -85,3 +85,13 @@ button:active {
     justify-content:space-evenly;
 }
 
+input[type=text] {
+	appearance: none;
+	border: 2px solid var(--first-color);
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    height: 2em;
+    border-radius: 8px;
+    font-size: 16px;
+	outline: none;
+}
