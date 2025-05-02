@@ -1,9 +1,27 @@
 <script>
-    import { createDraggable } from 'animejs';
+    import { createDraggable, createSpring, animate } from 'animejs';
     import { onMount } from 'svelte';
+
+    
+
     onMount(() => {
 
-        createDraggable('.grag');
+        createDraggable('.grag', {
+            container: [-16, 80, 16, 0],
+            releaseEase: createSpring({
+                stiffness: 120,
+                damping: 6,
+            }),
+            
+        })
+
+        animate('.grag', {
+            rotate: 360,
+            loop: true,
+            autoplay: true,
+            ease: 'inOutExpo',
+        });
+    
     })
 </script>
 
