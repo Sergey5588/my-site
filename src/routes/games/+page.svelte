@@ -2,7 +2,7 @@
     import { createDraggable, createSpring, animate } from 'animejs';
     import { onMount } from 'svelte';
 
-    
+    let i = 0
 
     onMount(() => {
 
@@ -12,15 +12,20 @@
                 stiffness: 120,
                 damping: 6,
             }),
+
+            onRelease: () => {
+                i+=1;
+                animate('.grag', {
+                    rotate: i*360,
+                    loop: false,
+                    duration: 2000,
+                    autoplay: true,
+                    ease: 'outExpo',
+                });
+            }
             
         })
 
-        animate('.grag', {
-            rotate: 360,
-            loop: true,
-            autoplay: true,
-            ease: 'inOutExpo',
-        });
     
     })
 </script>
