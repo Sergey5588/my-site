@@ -4,6 +4,20 @@
     -webkit-tap-highlight-color: transparent;
 }
 
+*::selection {
+    background:var(--third-color);
+    color: var(--bg-color);
+}
+*::-moz-selection {
+    background:var(--third-color);
+    color: var(--bg-color);
+}
+*::-webkit-selection {
+    background:var(--third-color);
+    color: var(--bg-color);
+}
+
+
 :root {
     --bg-color: #121619;
     --font-color: #F7FFF6;
@@ -94,4 +108,8 @@ input[type=text] {
     border-radius: 8px;
     font-size: 16px;
 	outline: none;
+}
+
+h1 {
+    min-height: 1.4em;
 }
